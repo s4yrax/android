@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/viewNumb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:ems="15"
+
+                android:hint="RandNumb"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/viewTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:ems="15"
+
+
+                android:hint="RandTxt"
+                android:textColorHint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/randbtn"
+                android:layout_width="410px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Рандом" />
+
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="410px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Добавить" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameTXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/opisTXT"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="409dp"
+        android:layout_height="420dp"
+        android:choiceMode="singleChoice"/>
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="410px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Удалить" />
+
+
+</LinearLayout>
